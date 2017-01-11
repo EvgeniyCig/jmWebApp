@@ -1,0 +1,10 @@
+﻿<header class="dashboard-header">
+    <div class="supervisor-info">
+        <div class="avatar"></div>
+        <div class="name">Цыганков Евгений</div>
+    </div>
+    <div class="dashboard-title">
+        <span class="title">ALM-CIS</span>
+        <div class="date" id="currentDate" (updateTime)="updateMyTime()">{{ whatDateTime | async | date:'dd-MM-yyyy' }}&nbsp;{{ whatDateTime | async | date:'shortTime' }}</div>
+    </div>
+</header>

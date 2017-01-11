@@ -1,0 +1,15 @@
+#jmAll {
+    padding-right: 0px;
+    padding-left: 284px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-width: 900px;
+}
+
+#jmPage {
+    width: calc(100% - 2px);
+    padding: 5px;
+    background-color: #252526;
+    display: block!important;
+    min-height: calc(100vh - 53px);
+}

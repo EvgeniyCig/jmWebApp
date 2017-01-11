@@ -1,0 +1,42 @@
+﻿<div class="jmsprpanel panel panel-default" style="width:440px">
+    <div class="panel-heading">
+
+<!--
+        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" (click)="jSprAdd()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-default" (click)="jSprDel()"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+            <div class="divider-vertical"></div>
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Поиск...">
+            </div>
+            <button type="button" class="btn btn-default" (click)="jSprDel()"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span></button>
+        </div>
+-->
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-default navbar-btn navbar-left"><span class="glyphicon glyphicon-plus" aria-hidden="true" (click)="jSprAdd()"></span></button>
+                <button type="button" class="btn btn-default navbar-btn navbar-left"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Поиск...">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-default navbar-btn navbar-right"><span class="glyphicon glyphicon-remove" aria-hidden="true" (click)="jSprTest()"></span></button>
+                </div>
+        </nav>
+
+    </div>
+    <div class="panel-body" (keydown)="onEvent($event)">
+        <ag-grid-ng2 #agGrid style="width:100%; height: 200px" class="ag-dark"
+                     [gridOptions]="gridOptions"
+                     [columnDefs]="columnDefs"
+                     [rowData]="sprData"
+                     enableSorting
+                     rowSelection="single"
+                     (cellValueChanged)="rowValueChanged($event)"
+                     (cellFocused)="onCellFocused($event)"
+                     (itemsAdded)="onitemsAdded($event)"></ag-grid-ng2>
+
+    </div>
+</div>

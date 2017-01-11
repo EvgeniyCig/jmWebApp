@@ -1,0 +1,78 @@
+﻿.jmsprpanel {
+    background-color: #505058;
+    border-color: #d3d3da;
+    border: 0;
+    border-radius: 2px;
+}
+
+    .jmsprpanel .panel-heading {
+        background-color: #505058;
+        padding: 4px 4px 0px 4px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+
+    .jmsprpanel .navbar {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        min-height: 35px;
+    }
+
+    .jmsprpanel .container-fluid {
+        padding-top: 2px;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+        .navbar-right {
+            margin-right: 0px;
+        }
+
+        .jmsprpanel .navbar .navbar-btn {
+            margin: 0px;
+            padding: 4px 11px;
+            color: #c7c7c7;
+            background-color: inherit;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .jmsprpanel .navbar .navbar-btn:hover  {
+            background-color: #333335;
+        }
+
+        .jmsprpanel .navbar .navbar-btn:active {
+            outline: none;
+            background-color: #007acc;
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        }
+
+        .jmsprpanel .navbar .navbar-btn:focus {
+            outline: none;
+        }
+
+            .jmsprpanel .navbar .navbar-btn > .glyphicon {
+                top: 3px;
+            }
+
+        .jmsprpanel .navbar-form {
+            padding: 0px;
+            margin: 0px 4px;
+        }
+
+        .jmsprpanel .form-control {
+            height: 28px;
+            padding: 0px 5px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+
+.jmsprpanel .panel-body {
+    padding: 2px 3px 0px 3px;
+}
+
+
